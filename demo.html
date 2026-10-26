@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.food-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 450px;
+    height: 80px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    background-color: #f5f0e8;
+    border-radius: 12px;
+    overflow: hidden;
+
+    transition: height 0.5s ease;
+}
+
+.food-name {
+    min-width: 180px;
+}
+
+.food-name h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.food-name p {
+    margin: 8px 0 0;
+    color: #a0522d;
+}
+
+.food-image {
+    width: 120px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    transition: height 0.5s ease, opacity 0.4s ease;
+}
+
+.food-image img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* On hover */
+.food-card:hover {
+    height: 140px;
+}
+
+.food-card:hover .food-image {
+    height: 100px;
+    opacity: 1;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="food-card">
+        <div class="food-name">
+            <h2>Margherita Pizza</h2>
+            <p>₹299</p>
+        </div>
+
+        <div class="food-image">
+            <img src="pizza.jpg" alt="Margherita Pizza">
+        </div>
+    </div>
+
+</body>
+
+</html>
